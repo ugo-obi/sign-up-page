@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.left-panel {
+    width: 40%;
+    background-image: url('images/girl.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.right-panel {
+    width: 60%;
+}
