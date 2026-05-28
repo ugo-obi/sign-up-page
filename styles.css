@@ -5,6 +5,7 @@
 }
 body {
     min-height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
@@ -17,7 +18,99 @@ body {
     background-image: url('images/girl.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .right-panel {
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 60px;
 }
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff6b6b;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.form {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form div label {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form div input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+form div input:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+button[type="submit"] {
+    grid-column: span 2;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff4c4c;
+}
+
+.login-link {
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.login-link a {
+    color: #ff6b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}       
