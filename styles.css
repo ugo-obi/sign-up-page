@@ -48,9 +48,9 @@ body {
     margin-bottom: 20px;
 }
 
-.form {
+form {
     display: grid;
-    gap: 20px;
+    gap: 20px 40px;
     grid-template-columns: 1fr 1fr;
 }
 
@@ -65,6 +65,8 @@ form div label {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #333;
+    margin-bottom: 1px;
+    margin-top: 10px;
 }
 
 form div {
@@ -85,7 +87,9 @@ form div input:focus {
 
 button[type="submit"] {
     grid-column: span 2;
+    justify-content: center;
     width: 100%;
+    max-width: 400px;
     padding: 12px;
     background-color: #ff6b6b;
     color: white;
@@ -94,7 +98,6 @@ button[type="submit"] {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-top: 10px;
 }
 
 button[type="submit"]:hover {
